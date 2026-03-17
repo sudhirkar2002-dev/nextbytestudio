@@ -1,0 +1,252 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products - NextByte Studio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:linear-gradient(120deg,#020617,#0f172a,#1e293b);
+color:#f8fafc;
+overflow-x:hidden;
+}
+
+/* CURSOR GLOW */
+
+.cursor-glow{
+position:fixed;
+width:300px;
+height:300px;
+background:radial-gradient(circle,#38bdf8 0%,transparent 70%);
+pointer-events:none;
+filter:blur(80px);
+opacity:0.6;
+transform:translate(-50%,-50%);
+z-index:0;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 60px;
+background:rgba(2,6,23,0.7);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,0.1);
+z-index:10;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#38bdf8;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{text-shadow:0 0 10px #38bdf8;}
+to{text-shadow:0 0 30px #38bdf8,0 0 50px #38bdf8;}
+}
+
+.menu a{
+margin-left:25px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+.menu a:hover{
+color:#38bdf8;
+}
+
+/* PAGE HEADER */
+
+.hero{
+padding-top:120px;
+text-align:center;
+margin-bottom:50px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#cbd5f5;
+}
+
+/* PRODUCTS GRID */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:40px 60px;
+}
+
+/* PRODUCT CARD */
+
+.card{
+padding:25px;
+border-radius:15px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.1);
+transition:0.4s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+background:rgba(255,255,255,0.15);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+color:#cbd5f5;
+font-size:14px;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+border-radius:8px;
+background:linear-gradient(270deg,#38bdf8,#6366f1,#38bdf8);
+background-size:400% 400%;
+animation:gradientMove 6s ease infinite;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+margin-top:60px;
+background:rgba(255,255,255,0.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="cursor-glow"></div>
+
+<nav>
+
+<div class="logo">NextByte Studio</div>
+
+<div class="menu">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="products.html">Products</a>
+<a href="request.html">Request Project</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+</div>
+
+</nav>
+
+
+<div class="hero">
+
+<h1>Our Products</h1>
+
+<p>Digital platforms, apps and tools built by NextByte Studio</p>
+
+</div>
+
+
+<div class="products">
+
+<div class="card">
+<h3>Productivity Tools</h3>
+<p>Modern digital applications designed to improve daily productivity and workflow.</p>
+<a class="btn">Explore</a>
+</div>
+
+<div class="card">
+<h3>Business Software</h3>
+<p>Software solutions that help businesses manage operations digitally.</p>
+<a class="btn">Explore</a>
+</div>
+
+<div class="card">
+<h3>Web Utilities</h3>
+<p>Lightweight online tools for everyday tasks and quick digital solutions.</p>
+<a class="btn">Explore</a>
+</div>
+
+<div class="card">
+<h3>Developer Tools</h3>
+<p>Powerful tools designed to support developers and technical workflows.</p>
+<a class="btn">Explore</a>
+</div>
+
+<div class="card">
+<h3>Automation Systems</h3>
+<p>Smart automation platforms that simplify complex workflows.</p>
+<a class="btn">Explore</a>
+</div>
+
+<div class="card">
+<h3>Custom Platforms</h3>
+<p>Tailor-made digital platforms built for specific business needs.</p>
+<a class="btn">Explore</a>
+</div>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 NextByte Studio</p>
+
+<p>Email: sudhirkar29@gmail.com</p>
+
+</footer>
+
+
+<script>
+
+const glow = document.querySelector(".cursor-glow");
+
+document.addEventListener("mousemove", e=>{
+glow.style.left = e.clientX+"px";
+glow.style.top = e.clientY+"px";
+});
+
+</script>
+
+</body>
+</html>
+```
