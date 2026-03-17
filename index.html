@@ -7,7 +7,7 @@
 
 body{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Arial;
 background:#0f172a;
 color:white;
 }
@@ -29,14 +29,13 @@ color:#38bdf8;
 }
 
 .hero{
-text-align:center;
 padding:100px 20px;
+text-align:center;
 background:linear-gradient(135deg,#1e293b,#020617);
 }
 
 .hero h1{
 font-size:50px;
-margin-bottom:10px;
 }
 
 .hero p{
@@ -50,39 +49,38 @@ padding:10px 20px;
 border-radius:6px;
 text-decoration:none;
 font-weight:bold;
-display:inline-block;
-margin-top:20px;
-}
-
-.btn:hover{
-background:#0ea5e9;
 }
 
 .section{
-padding:50px;
+padding:40px;
 }
 
-.cards{
+.row{
 display:flex;
-flex-wrap:wrap;
+overflow-x:auto;
 gap:20px;
+padding-bottom:10px;
 }
 
 .card{
 background:#1e293b;
 padding:20px;
 border-radius:10px;
-width:250px;
+min-width:250px;
 }
 
 .card h3{
 margin-top:0;
 }
 
+.card p{
+font-size:14px;
+}
+
 footer{
 background:#020617;
-padding:20px;
 text-align:center;
+padding:20px;
 margin-top:40px;
 }
 
@@ -98,12 +96,13 @@ margin-top:40px;
 <a href="privacy-policy.html">Privacy Policy</a>
 </nav>
 
-
 <div class="hero">
 
 <h1>NextByte Studio</h1>
 
-<p>Building Modern Apps and Web Solutions</p>
+<p>Apps • Web Solutions • Software Tools</p>
+
+<br>
 
 <a href="request.html" class="btn">Start Your Project</a>
 
@@ -112,26 +111,28 @@ margin-top:40px;
 
 <div class="section">
 
-<h2>Featured Apps</h2>
+<h2>Mobile Apps</h2>
 
-<div class="cards">
+<div class="row">
 
 <div class="card">
 <h3>Expense Tracker</h3>
-<p>Track daily income and expenses easily.</p>
-<a href="#" class="btn">View App</a>
+<p>Track your daily expenses easily.</p>
 </div>
 
 <div class="card">
-<h3>Cyber Cafe Billing</h3>
-<p>Billing system for cyber cafes.</p>
-<a href="#" class="btn">View App</a>
+<h3>Task Manager</h3>
+<p>Manage your tasks and productivity.</p>
 </div>
 
 <div class="card">
-<h3>GST Calculator</h3>
-<p>Quick GST calculation tool.</p>
-<a href="#" class="btn">View App</a>
+<h3>Notes App</h3>
+<p>Save and organize your ideas.</p>
+</div>
+
+<div class="card">
+<h3>Calculator Pro</h3>
+<p>Advanced calculator with history.</p>
 </div>
 
 </div>
@@ -141,23 +142,54 @@ margin-top:40px;
 
 <div class="section">
 
-<h2>Our Services</h2>
+<h2>Web Tools</h2>
 
-<div class="cards">
+<div class="row">
+
+<div class="card">
+<h3>GST Calculator</h3>
+<p>Quick GST calculations.</p>
+</div>
+
+<div class="card">
+<h3>Age Calculator</h3>
+<p>Calculate age instantly.</p>
+</div>
+
+<div class="card">
+<h3>Password Generator</h3>
+<p>Create secure passwords.</p>
+</div>
+
+<div class="card">
+<h3>Unit Converter</h3>
+<p>Convert different units easily.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>Software Services</h2>
+
+<div class="row">
 
 <div class="card">
 <h3>Mobile App Development</h3>
-<p>We build modern Android apps using latest technologies.</p>
+<p>Android app development solutions.</p>
 </div>
 
 <div class="card">
 <h3>Website Development</h3>
-<p>Professional websites for businesses and startups.</p>
+<p>Modern responsive websites.</p>
 </div>
 
 <div class="card">
 <h3>Custom Software</h3>
-<p>Custom tools, automation software, and business systems.</p>
+<p>Custom tools for businesses.</p>
 </div>
 
 </div>
