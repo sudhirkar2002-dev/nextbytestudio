@@ -14,7 +14,16 @@ color:white;
 
 nav{
 background:#020617;
-padding:15px;
+padding:15px 40px;
+display:flex;
+align-items:center;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#38bdf8;
+margin-right:40px;
 }
 
 nav a{
@@ -67,14 +76,17 @@ background:#1e293b;
 padding:20px;
 border-radius:10px;
 min-width:250px;
+transition:0.3s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:scale(1.08);
+background:#334155;
 }
 
 .card h3{
 margin-top:0;
-}
-
-.card p{
-font-size:14px;
 }
 
 footer{
@@ -91,9 +103,13 @@ margin-top:40px;
 <body>
 
 <nav>
+
+<div class="logo">NextByte Studio</div>
+
 <a href="index.html">Home</a>
 <a href="request.html">Request Project</a>
 <a href="privacy-policy.html">Privacy Policy</a>
+
 </nav>
 
 <div class="hero">
@@ -127,7 +143,7 @@ margin-top:40px;
 
 <div class="card">
 <h3>Notes App</h3>
-<p>Save and organize your ideas.</p>
+<p>Save and organize ideas.</p>
 </div>
 
 <div class="card">
@@ -163,7 +179,7 @@ margin-top:40px;
 
 <div class="card">
 <h3>Unit Converter</h3>
-<p>Convert different units easily.</p>
+<p>Convert units easily.</p>
 </div>
 
 </div>
