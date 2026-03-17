@@ -1,56 +1,136 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Request a Project - NextByte Studio</title>
+<title>Request Project - NextByte Studio</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0f172a;
+color:white;
+}
+
+nav{
+background:#020617;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin-right:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.container{
+padding:60px;
+max-width:600px;
+margin:auto;
+}
+
+h1{
+text-align:center;
+}
+
+form{
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+}
+
+input, select, textarea{
+width:100%;
+padding:10px;
+margin-top:8px;
+margin-bottom:20px;
+border-radius:5px;
+border:none;
+}
+
+button{
+background:#38bdf8;
+color:black;
+padding:12px;
+border:none;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#0ea5e9;
+}
+
+footer{
+background:#020617;
+padding:20px;
+text-align:center;
+margin-top:40px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <nav>
-<a href="index.html">Home</a> |
-<a href="request.html">Request Project</a> |
+<nav>
+<a href="index.html">Home</a>
+<a href="request.html">Request Project</a>
 <a href="privacy-policy.html">Privacy Policy</a>
 </nav>
 
-<hr>
+<div class="container">
 
-<h1>Request a Project</h1>
+<h1>Start Your Project</h1>
 
-<p>Fill the form below to request an app or website from NextByte Studio.</p>
+<p>Fill the form below to request a website or app from NextByte Studio.</p>
 
 <form>
 
-<label>Name:</label><br>
-<input type="text" name="name"><br><br>
+<label>Name</label>
+<input type="text" placeholder="Your Name">
 
-<label>Email:</label><br>
-<input type="email" name="email"><br><br>
+<label>Email</label>
+<input type="email" placeholder="Your Email">
 
-<label>Project Type:</label><br>
-<select name="project">
+<label>Project Type</label>
+<select>
 <option>Mobile App</option>
 <option>Website</option>
 <option>Desktop Software</option>
 <option>Custom Tool</option>
-</select><br><br>
+</select>
 
-<label>Budget:</label><br>
-<select name="budget">
-<option>₹5k - ₹10k</option>
-<option>₹10k - ₹50k</option>
-<option>₹50k+</option>
-</select><br><br>
+<label>Budget</label>
+<select>
+<option>₹5,000 - ₹10,000</option>
+<option>₹10,000 - ₹50,000</option>
+<option>₹50,000+</option>
+</select>
 
-<label>Project Description:</label><br>
-<textarea rows="5" cols="40"></textarea><br><br>
+<label>Project Description</label>
+<textarea rows="5" placeholder="Describe your project"></textarea>
 
 <button type="submit">Submit Request</button>
 
 </form>
 
-<br><br>
+</div>
 
-<a href="index.html">Back to Home</a>
+<footer>
+
+<p>© 2026 NextByte Studio</p>
+
+<p>Email: sudhirkar29@gmail.com</p>
+
+</footer>
 
 </body>
 </html>
