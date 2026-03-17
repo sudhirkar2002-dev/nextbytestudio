@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,45 +6,64 @@
 
 <style>
 
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+
 body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#0f172a;
-color:white;
+background:linear-gradient(120deg,#020617,#0f172a,#1e293b);
+color:#f8fafc;
 }
+
+/* NAVBAR */
 
 nav{
-background:#020617;
-padding:15px;
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 60px;
+background:rgba(2,6,23,0.7);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
-nav a{
-color:white;
-margin-right:20px;
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.menu a{
+margin-left:25px;
 text-decoration:none;
+color:white;
 font-weight:bold;
 }
 
-nav a:hover{
-color:#38bdf8;
-}
+/* CONTENT */
 
 .container{
 max-width:900px;
 margin:auto;
-padding:60px;
+padding-top:120px;
+padding-bottom:60px;
 }
 
 h1{
-text-align:center;
-margin-bottom:40px;
+margin-bottom:30px;
+}
+
+p{
+margin-bottom:20px;
+color:#cbd5f5;
+line-height:1.6;
 }
 
 footer{
-background:#020617;
-padding:20px;
 text-align:center;
-margin-top:40px;
+padding:30px;
+background:rgba(255,255,255,0.05);
 }
 
 </style>
@@ -53,31 +73,28 @@ margin-top:40px;
 <body>
 
 <nav>
+
+<div class="logo">NextByte Studio</div>
+
+<div class="menu">
 <a href="index.html">Home</a>
 <a href="request.html">Request Project</a>
 <a href="privacy-policy.html">Privacy Policy</a>
+</div>
+
 </nav>
 
 <div class="container">
 
 <h1>Privacy Policy</h1>
 
-<p>This Privacy Policy applies to all applications and services developed by <b>NextByte Studio</b>.</p>
+<p>This privacy policy applies to apps and services developed by NextByte Studio.</p>
 
-<h2>Information Collection</h2>
-<p>Our apps may collect limited information such as device information or usage data to improve the service.</p>
+<p>We respect your privacy and do not collect personal information without your consent.</p>
 
-<h2>How We Use Information</h2>
-<p>The information collected is used only to improve app functionality and user experience.</p>
+<p>Some services may use third-party tools such as analytics or advertising platforms.</p>
 
-<h2>Third Party Services</h2>
-<p>Some apps may use third-party services such as Google AdMob or analytics tools which may collect information according to their privacy policies.</p>
-
-<h2>Data Security</h2>
-<p>We value user privacy and take reasonable measures to protect information.</p>
-
-<h2>Contact Us</h2>
-<p>If you have any questions about this Privacy Policy, contact us:</p>
+<p>If you have any questions, contact us:</p>
 
 <p>Email: sudhirkar29@gmail.com</p>
 
@@ -91,3 +108,4 @@ margin-top:40px;
 
 </body>
 </html>
+```
