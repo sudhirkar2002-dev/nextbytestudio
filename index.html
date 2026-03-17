@@ -9,28 +9,76 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-font-family:Arial, Helvetica, sans-serif;
-background:#0f172a;
+background:linear-gradient(120deg,#020617,#0f172a,#1e293b);
 color:white;
+overflow-x:hidden;
 }
+
+/* HERO BACKGROUND ANIMATION */
+
+body::before{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:#38bdf8;
+filter:blur(200px);
+top:-100px;
+left:-100px;
+animation:move1 12s infinite alternate;
+}
+
+body::after{
+content:"";
+position:fixed;
+width:500px;
+height:500px;
+background:#6366f1;
+filter:blur(200px);
+bottom:-100px;
+right:-100px;
+animation:move2 12s infinite alternate;
+}
+
+@keyframes move1{
+from{transform:translate(0,0);}
+to{transform:translate(200px,200px);}
+}
+
+@keyframes move2{
+from{transform:translate(0,0);}
+to{transform:translate(-200px,-200px);}
+}
+
 
 /* NAVBAR */
 
 nav{
 display:flex;
-align-items:center;
 justify-content:space-between;
-padding:18px 60px;
-background:#020617;
+align-items:center;
+padding:20px 60px;
+backdrop-filter:blur(10px);
+background:rgba(255,255,255,0.05);
+border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
+/* GLOWING LOGO */
+
 .logo{
-font-size:22px;
+font-size:24px;
 font-weight:bold;
 color:#38bdf8;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{text-shadow:0 0 10px #38bdf8;}
+to{text-shadow:0 0 25px #38bdf8,0 0 40px #38bdf8;}
 }
 
 .menu a{
@@ -44,12 +92,11 @@ font-weight:bold;
 color:#38bdf8;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
 text-align:center;
-padding:120px 20px;
-background:linear-gradient(135deg,#020617,#1e293b);
+padding:140px 20px;
 }
 
 .hero h1{
@@ -63,13 +110,13 @@ opacity:0.9;
 }
 
 .btn{
-display:inline-block;
 margin-top:30px;
+display:inline-block;
 padding:12px 28px;
-background:linear-gradient(45deg,#38bdf8,#0ea5e9);
 border-radius:8px;
+background:linear-gradient(45deg,#38bdf8,#6366f1);
 text-decoration:none;
-color:black;
+color:white;
 font-weight:bold;
 transition:0.3s;
 }
@@ -77,6 +124,7 @@ transition:0.3s;
 .btn:hover{
 transform:scale(1.1);
 }
+
 
 /* SECTION */
 
@@ -88,24 +136,32 @@ padding:60px;
 margin-bottom:25px;
 }
 
-/* NETFLIX ROW */
+
+/* ROW */
 
 .row{
 display:flex;
 gap:20px;
 overflow-x:auto;
-padding-bottom:10px;
 }
 
-/* CARD */
+
+/* GLASS CARD */
 
 .card{
 min-width:260px;
-background:#1e293b;
 padding:25px;
-border-radius:12px;
-transition:0.35s;
+border-radius:15px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.1);
+transition:0.4s;
 cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+background:rgba(255,255,255,0.15);
 }
 
 .card h3{
@@ -117,21 +173,16 @@ font-size:14px;
 opacity:0.8;
 }
 
-/* HOVER EFFECT */
-
-.card:hover{
-transform:translateY(-10px) scale(1.05);
-background:#334155;
-box-shadow:0px 10px 30px rgba(0,0,0,0.5);
-}
 
 /* FOOTER */
 
 footer{
-background:#020617;
+margin-top:60px;
 text-align:center;
 padding:25px;
-margin-top:60px;
+backdrop-filter:blur(10px);
+background:rgba(255,255,255,0.05);
+border-top:1px solid rgba(255,255,255,0.1);
 }
 
 </style>
@@ -139,7 +190,6 @@ margin-top:60px;
 </head>
 
 <body>
-
 
 <nav>
 
@@ -154,12 +204,11 @@ margin-top:60px;
 </nav>
 
 
-
 <div class="hero">
 
 <h1>NextByte Studio</h1>
 
-<p>Building Digital Products, Apps and Modern Software Solutions</p>
+<p>Building Modern Apps, Platforms and Digital Solutions</p>
 
 <a href="request.html" class="btn">Start Your Project</a>
 
@@ -175,22 +224,22 @@ margin-top:60px;
 
 <div class="card">
 <h3>Productivity Applications</h3>
-<p>Tools designed to improve workflow and daily productivity.</p>
+<p>Modern tools designed to improve digital productivity.</p>
 </div>
 
 <div class="card">
 <h3>Business Software</h3>
-<p>Smart digital solutions for modern businesses.</p>
+<p>Smart solutions for growing digital businesses.</p>
 </div>
 
 <div class="card">
 <h3>Automation Tools</h3>
-<p>Software that simplifies repetitive digital tasks.</p>
+<p>Powerful systems to automate workflows.</p>
 </div>
 
 <div class="card">
 <h3>Utility Applications</h3>
-<p>Lightweight apps for everyday digital needs.</p>
+<p>Lightweight software for everyday tasks.</p>
 </div>
 
 </div>
@@ -207,49 +256,22 @@ margin-top:60px;
 
 <div class="card">
 <h3>Online Calculators</h3>
-<p>Fast web tools for quick calculations.</p>
+<p>Fast web-based calculation tools.</p>
 </div>
 
 <div class="card">
 <h3>Developer Utilities</h3>
-<p>Useful tools for programmers and developers.</p>
+<p>Helpful tools designed for developers.</p>
 </div>
 
 <div class="card">
 <h3>Conversion Tools</h3>
-<p>Instant conversions for data and units.</p>
+<p>Simple and quick conversion utilities.</p>
 </div>
 
 <div class="card">
-<h3>Web Automation</h3>
-<p>Smart web-based automation solutions.</p>
-</div>
-
-</div>
-
-</div>
-
-
-
-<div class="section">
-
-<h2>Software Solutions</h2>
-
-<div class="row">
-
-<div class="card">
-<h3>Mobile App Development</h3>
-<p>Modern Android apps with clean user experiences.</p>
-</div>
-
-<div class="card">
-<h3>Website Development</h3>
-<p>Professional responsive websites for businesses.</p>
-</div>
-
-<div class="card">
-<h3>Custom Software Systems</h3>
-<p>Tailored digital systems for unique needs.</p>
+<h3>Automation Systems</h3>
+<p>Smart web automation solutions.</p>
 </div>
 
 </div>
@@ -267,7 +289,6 @@ margin-top:60px;
 <p>Email: sudhirkar29@gmail.com</p>
 
 </footer>
-
 
 </body>
 </html>
