@@ -35,13 +35,10 @@ animation:glow 2s infinite alternate;
 }
 
 @keyframes glow{
-from{
-text-shadow:0 0 10px #38bdf8;
+from{text-shadow:0 0 10px #38bdf8;}
+to{text-shadow:0 0 30px #38bdf8,0 0 50px #38bdf8;}
 }
-to{
-text-shadow:0 0 30px #38bdf8,0 0 50px #38bdf8;
-}
-}
+
 .menu a{
 margin-left:25px;
 text-decoration:none;
@@ -62,6 +59,11 @@ h1{
 margin-bottom:30px;
 }
 
+h2{
+margin-top:30px;
+margin-bottom:10px;
+}
+
 p{
 margin-bottom:20px;
 color:#cbd5f5;
@@ -74,7 +76,9 @@ padding:30px;
 background:rgba(255,255,255,0.05);
 }
 
-  .cursor-glow{
+/* CURSOR GLOW */
+
+.cursor-glow{
 position:fixed;
 width:300px;
 height:300px;
@@ -92,7 +96,7 @@ z-index:0;
 
 <body>
 
-  <div class="cursor-glow"></div>
+<div class="cursor-glow"></div>
 
 <nav>
 
@@ -114,15 +118,81 @@ z-index:0;
 
 <h1>Privacy Policy</h1>
 
-<p>This privacy policy applies to apps and services developed by NextByte Studio.</p>
+<p>
+This privacy policy applies to all applications, software tools, websites,
+and services developed and operated by NextByte Studio. We are committed
+to protecting the privacy of our users and ensuring transparency in how
+information is handled when using our products or services.
+</p>
 
-<p>We respect your privacy and do not collect personal information without your consent.</p>
+<h2>Information Collection</h2>
 
-<p>Some services may use third-party tools such as analytics or advertising platforms.</p>
+<p>
+NextByte Studio does not collect personally identifiable information
+unless it is voluntarily provided by the user. Some applications may
+request basic information such as email addresses or contact details
+when users submit project inquiries or communicate through our website.
+</p>
 
-<p>If you have any questions, contact us:</p>
+<h2>How We Use Information</h2>
 
-<p>Email: sudhirkar29@gmail.com</p>
+<p>
+Any information provided by users is used solely for communication,
+service improvement, and project discussions. We do not sell,
+rent, or share personal data with third parties unless required
+for providing services or complying with legal obligations.
+</p>
+
+<h2>Third-Party Services</h2>
+
+<p>
+Some applications or services developed by NextByte Studio may use
+third-party tools such as analytics platforms, advertising networks,
+or cloud service providers. These services may collect anonymous
+usage data to improve performance and user experience.
+</p>
+
+<h2>Cookies</h2>
+
+<p>
+Our website may use cookies or similar technologies to enhance user
+experience and analyze website traffic. Cookies help improve the
+functionality and performance of our digital services.
+</p>
+
+<h2>Data Security</h2>
+
+<p>
+We prioritize the security of user information and take appropriate
+technical and organizational measures to protect data from unauthorized
+access, misuse, or disclosure.
+</p>
+
+<h2>Children's Privacy</h2>
+
+<p>
+NextByte Studio services are not directed toward children under the
+age of 13. We do not knowingly collect personal information from
+children. If such information is discovered, it will be removed
+immediately.
+</p>
+
+<h2>Policy Updates</h2>
+
+<p>
+This privacy policy may be updated from time to time to reflect
+changes in technology, legal requirements, or our services.
+Users are encouraged to review this page periodically for updates.
+</p>
+
+<h2>Contact Information</h2>
+
+<p>
+If you have any questions or concerns about this privacy policy
+or how data is handled, please contact us at:
+</p>
+
+<p>Email: sksolutions2000pvt@gmail.com</p>
 
 </div>
 
@@ -132,8 +202,7 @@ z-index:0;
 
 </footer>
 
-</body>
-  <script>
+<script>
 
 const glow = document.querySelector(".cursor-glow");
 
@@ -143,4 +212,6 @@ glow.style.top = e.clientY + "px";
 });
 
 </script>
+
+</body>
 </html>
